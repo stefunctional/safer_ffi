@@ -32,7 +32,7 @@ const _: () = {
         fn is_u8_or_i8<T>() where
             T : IsU8OrI8,
         {}
-        let _ = is_u8_or_i8::<::libc::c_char>;
+        let _ = is_u8_or_i8::<::core::ffi::c_char>;
     };
 };
 

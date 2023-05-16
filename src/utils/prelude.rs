@@ -26,7 +26,7 @@ pub(in crate) use ::core::{
     },
 };
 #[cfg(not(target_arch = "wasm32"))]
-pub(in crate) use ::libc::size_t;
+pub(in crate) type size_t = usize;
 
 #[cfg(target_arch = "wasm32")]
 #[allow(bad_style)]

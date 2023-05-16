@@ -1,5 +1,6 @@
 use super::*;
 
+#[cfg(feature = "std")]
 const_assert! {
     ::core::mem::size_of::<::libc::uintptr_t>()
     ==
